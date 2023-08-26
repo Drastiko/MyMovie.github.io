@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 70px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.descripcion {
+    width: 100%;
+    font-size: 20px;
+    margin-top: 60px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.id-list {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+.id-list li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+
+
+
+
+.titulo {
+    animation: slideIn 1s ease-in-out forwards;
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out; 
+    transform: 3s;
+}
+
+
+.genre-container {
+    width: calc(30% - 20px);
+    padding: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 867px) {
+
+    .genre-container {
+        width: calc(50% - 20px);
+        margin-top: 30px;
+    }
+
+}
+
+.genre-container h2 {
+    font-size: 18px;
+    margin-bottom: 1px;
+    text-align: center;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.tarjeta {
+    border: 1px solid #303030;
+    padding: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    max-width: 300px;
+    width: 100%;
+}
+
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+
+.tarjetas-img {
+    text-align: center;
+}
+
+.tarjetas-img img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.tarjetas-img h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.tarjetas-img p {
+    font-size: 14px;
+    color: #666;
+}
